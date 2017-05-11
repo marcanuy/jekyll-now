@@ -2,13 +2,19 @@
 layout: default
 ---
 
-<div markdown="1">This **markdown** doesn't work! :(</div>
+
+**I am markdown**
 
 <div markdown="1">
-This **markdown** doesn't work too! :(
+    Hey **markdown** is working! :D
 </div>
 
-{% include 'mymarkdown.md' %}
+<div>
+    **markdown** works even *without* the markdown tag in the div! ;)
+</div>
+
+
+{% include mymarkdown.md %}
 
 <div class="posts">
   {% for post in site.posts %}
